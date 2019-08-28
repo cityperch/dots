@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Dots</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="controls" class="flex">
+            <div class="mdl-textfield mdl-js-textfield flex-row">
+                <input class="mdl-textfield__input" type="text" id="playerName">
+                <label class="mdl-textfield__label" for="playerName">Please enter your name</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield flex-row block-difficulty">
+                <label class="mdl-slider__label block text-center" for="difficulty">Difficulty</label>
+                <input class="mdl-slider mdl-js-slider" id="difficulty" type="range" min="0" max="100" value="25"
+                    tabindex="0">
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect"
+                id="start">
+                Play
+            </button>
+        </div>
+        <div class="row content-center align-items-center">
+            <div id="playground"></div>
+            <div class="leaderboard-container">
+                <h5 class="caption">Leaders</h5>
+                <ol id="leaderboard" class="demo-list-item mdl-list"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>

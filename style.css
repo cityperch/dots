@@ -1,0 +1,75 @@
+/* common */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+/* controls */
+.block-difficulty div {
+    margin-bottom: -7px;
+}
+
+
+/* playground */
+#playground {
+    border: 1px solid #3583;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#playground>* {
+    border: 1px solid #e6d1d1;
+}
+
+#playground>*.computer {
+    background-color: #f44336;
+}
+
+#playground>*.player {
+    background-color: #80e882;
+}
+
+#playground>*.active {
+    background-color: #8090e8;
+}
+
+ol .score {
+    color: red;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.leaderboard-container {
+    width: 300px;
+    margin: 50px;
+}
+.row {
+    display: flex;
+} 
+.content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
